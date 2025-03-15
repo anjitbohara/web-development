@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Anjit Bohora</title>
+
+    <style>
+        .gallery {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-auto-rows: auto;
+          grid-auto-flow: dense;
+          gap: 6px;
+        }
+    
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+    
+        img.four-grid-cells {
+          grid-row: span 2 / auto;
+          grid-column: span 2 / auto;
+        }
+    
+        img.wide-image {
+          grid-column: span 2 / auto;
+        }
+    
+        @media screen and (max-width: 768px) {
+          .gallery {
+            grid-template-columns: 1fr 1fr;
+          }
+        }
+    
+        @media screen and (max-width: 480px) {
+          /* changes the grid layout to a single column */
+          div.gallery {
+            grid-template-columns: 1fr;
+          }
+    
+          /* resets the grid placement properties for 
+    the images spanning four grid cells */
+          img.four-grid-cells {
+            grid-row: auto;
+            grid-column: auto;
+          }
+    
+          /* resets the grid placement properties for 
+    the images spanning two grid columns  */
+          img.wide-image {
+            grid-column: auto;
+          }
+        }
+      </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-inner">
+          <div class="logo">
+            <a href="index.html">
+              <h1 class="site_title">Portfolio</h1>
+            </a>
+          </div>
+          <nav>
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="project.html">Projects</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+              <li>
+                <a href="videoDemo.html">Video Demo</a>
+              </li>
+              <li>
+                <a href="sitereport.html">Site Report</a>
+              </li>
+            </ul>
+          </nav>
+          <i id="icon" class="fa fa-bars" style="z-index: 99999"></i>
+          <div class="mobile-menu" id="mobile-menu">
+            <nav id="nav">
+              <ul>
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="project.html">Projects</a>
+                </li>
+                <li>
+                  <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                  <a href="videoDemo.html">Video Demo</a>
+                </li>
+                <li>
+                  <a href="sitereport.html">Site Report</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="my-projects" style="background-color: #9E9E9E;">
+      <div class="container">
+        <div class="projects-inner">
+          <h2 class="text-align-center">My Projects</h2>
+          <div class="projects-grid" style="display: none;">
+            <div class="card">
+              <div class="card__img">
+                <img src="imgs/about-me.png" alt="Big Ben" />
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__img">
+                <img src="imgs/contact.png" alt="Eiffel Tower" />
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__img">
+                <img src="imgs/banner.png" alt="Colosseum" />
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__img">
+                <img src="imgs/resume.png" alt="Pisa Tower" />
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__img">
+                <img
+                  src="https://images.unsplash.com/photo-1585155967849-91c736589c84?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=627&amp;q=80"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__img">
+                <img
+                  src="https://images.unsplash.com/photo-1527915676329-fd5ec8a12d4b?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1171&amp;q=80"
+                  alt="Sydney Opera House"
+                />
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+          <div class="gallery">
+            <img
+              class="four-grid-cells"
+              src="imgs/banner.png"
+              alt="Northern Winter Sky Image"
+            />
+      
+            <img src="imgs/contact-me.png" alt="Shining Stars Image" />
+      
+            <img
+              class="wide-image"
+              src="imgs/footer.png"
+              alt="A River Flowing Image"
+            />
+      
+            <img src="imgs/anjit.jpg" alt="A cloudy Mountain Image" />
+      
+            <img
+              src="imgs/site-report.png"
+              alt="A Winter Rainbow Image"
+            />
+      
+            <img
+              class="wide-image"
+              src="imgs/video-demo.png"
+              alt="A Clean Mountain Lake"
+            />
+      
+            <img
+              src="imgs/education.png"
+              alt="Shining Stars Image"
+            />
+          </div>
+
+
+
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="copywright">
+          <p style="line-height: 25px">
+            © <span>Copyright</span> <strong class="sitename">AB-Dev</strong>
+            <span>All Rights Reserved</span>
+          </p>
+        </div>
+        <div class="social_network">
+          <a
+            href="https://www.linkedin.com/in/anjit-bohara-b9183032b/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://www.facebook.com/anjit.bohara.18" target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/____anjit_bohara____?igsh=MW5hY25vbHY4eTYxZg=="
+            target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+        <div class="designed_by">
+          Designed by
+          <a href="https://bootstrapmade.com/" style="color: gold"
+            ><strong>Anjit Bohara</strong></a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

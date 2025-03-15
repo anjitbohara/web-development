@@ -3,8 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
 
     <title>Anjit Bohora</title>
   </head>
@@ -20,28 +26,40 @@
           <nav>
             <ul>
               <li>
-                <a href="#aboutme">About Me</a>
+                <a href="index.html">Home</a>
               </li>
               <li>
-                <a href="#resume">Summary</a>
+                <a href="project.html">Projects</a>
               </li>
               <li>
-                <a href="#contact-me">Contact Me</a>
+                <a href="contact.html">Contact</a>
+              </li>
+              <li>
+                <a href="videoDemo.html">Video Demo</a>
+              </li>
+              <li>
+                <a href="sitereport.html">Site Report</a>
               </li>
             </ul>
           </nav>
-            <i id="icon" class="fa fa-bars" style="z-index: 99999;"></i>
+          <i id="icon" class="fa fa-bars" style="z-index: 99999"></i>
           <div class="mobile-menu" id="mobile-menu">
             <nav id="nav">
               <ul>
                 <li>
-                  <a href="#aboutme">About Me</a>
+                  <a href="index.html">Home</a>
                 </li>
                 <li>
-                  <a href="#resume">Summary</a>
+                  <a href="project.html">Projects</a>
                 </li>
                 <li>
-                  <a href="#contact-me">Contact Me</a>
+                  <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                  <a href="videoDemo.html">Video Demo</a>
+                </li>
+                <li>
+                  <a href="sitereport.html">Site Report</a>
                 </li>
               </ul>
             </nav>
@@ -49,78 +67,82 @@
         </div>
       </div>
     </header>
-    <main class="main">
-      <div class="banner">
-        <img src="anjit.jpg">
-        <div class="container" style="z-index: 10;">
+
+      <section class="banner">
+        <img src="imgs/anjit.jpg" />
+        <div class="container" style="z-index: 10">
           <h2>I am Anjit Bohara</h2>
-          <p style="text-align: center;"><span>Web Development</span></p>
-        </div>
+          <p style="text-align: center"><span>Web Development</span></p>
+        </section>
       </div>
+    <section class="about-me">
       <div class="container">
-        <div class="about-me" id="aboutme">
-          <div class="about-inner">
-            <div class="row">
-              <div class="column-half">
-                <div class="row">
-                  <div class="width-45">
-                    <img
-                      src="myself.jpeg"
-                      class="img-fluid"
-                      alt=""
-                    />
-                  </div>
-                  <div class="column-55">
-                    <p><strong>Name: </strong> <span>Anjit Bohara</span></p>
-                    <p>
-                      <strong>Profile: </strong>
-                      <span>Data Science & AI Student</span>
-                    </p>
-                    <p>
-                      <strong>Email: </strong> <span>Anjitbohara111@gmail.com</span>
-                    </p>
-                    <p><strong>Phone: </strong> <span>+44 7405 551141</span></p>
-                  </div>
+        <div class="about-inner">
+          <div class="row">
+            <div class="column-half">
+              <div class="row">
+                <div class="width-45">
+                  <img src="imgs/myself.jpeg" class="img-fluid" alt="">
+                </div>
+                <div class="column-55">
+                  <p><strong>Name: </strong> <span>Anjit Bohara</span></p>
+                  <p>
+                    <strong>Profile: </strong>
+                    <span>Data Science &amp; AI Student</span>
+                  </p>
+                  <p>
+                    <strong>Email: </strong>
+                    <span>Anjitbohara111@gmail.com</span>
+                  </p>
+                  <p><strong>Phone: </strong> <span>+44 7405 551141</span></p>
+                  <p>
+                    <strong>Linkedin: </strong>
+                    <a target="_blank" href="https://www.linkedin.com/in/anjit-bohara-b9183032b/">anjit-bohara-b9183032b</a>
+                  </p>
+                  <p><strong>GitHub: </strong> <a target="_blank" href="https://github.com/anjitbohara">github.com/anjitbohara</a></p>
                 </div>
               </div>
-              <div class="column-half">
-                <div class="summary">
-                  <h3>About Me</h3>
-                  <p>
-                    Curabitur non nulla sit amet nisl tempus convallis quis ac
-                    lectus. Curabitur arcu erat, accumsan id imperdiet et,
-                    porttitor at sem. Praesent sapien massa, convallis a
-                    pellentesque nec, egestas non nisi. Nulla porttitor accumsan
-                    tincidunt.
-                  </p>
-                  <p>
-                    Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
-                    Vivamus suscipit tortor eget felis porttitor volutpat.
-                    Vestibulum ac diam sit amet quam vehicula elementum sed sit
-                    amet dui. porttitor at sem.
-                  </p>
-                </div>
+            </div>
+            <div class="column-half">
+              <div class="summary">
+                <h3>About Me</h3>
+                <p>
+                  Curabitur non nulla sit amet nisl tempus convallis quis ac
+                  lectus. Curabitur arcu erat, accumsan id imperdiet et,
+                  porttitor at sem. Praesent sapien massa, convallis a
+                  pellentesque nec, egestas non nisi. Nulla porttitor accumsan
+                  tincidunt.
+                </p>
+                <p>
+                  Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                  Vivamus suscipit tortor eget felis porttitor volutpat.
+                  Vestibulum ac diam sit amet quam vehicula elementum sed sit
+                  amet dui. porttitor at sem.
+                </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="profile" id="resume">
+      </div>
+    </section>
+    <section class="profile">
+      <div class="container">
+        <div class="profile-inner">
           <h2 class="text-align-center">Resume</h2>
           <p class="text-align-center subtitle-block">
-            Below are my personal summary
+            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+            consectetur velit
           </p>
           <div class="row">
             <div class="column-half">
               <h3 class="subtitle">Summary</h3>
               <div class="summary-item">
-                <h4 style="text-transform: uppercase;">Anjit Bohara</h4>
+                <h4 style="text-transform: uppercase">Anjit Bohara</h4>
                 <p>
-                  <em
-                    >Innovative and deadline-driven Graphic Designer with 3+
+                  <em>Innovative and deadline-driven Graphic Designer with 3+
                     years of experience designing and developing user-centered
                     digital/print marketing material from initial concept to
-                    final, polished deliverable.</em
-                  >
+                    final, polished deliverable.</em>
                 </p>
                 <ul>
                   <li>36 Abington Square, Northampton NN1 4AA, UK</li>
@@ -132,11 +154,15 @@
             <div class="column-half">
               <h3 class="subtitle">Educaion</h3>
               <div class="summary-item">
-                <h4>Bachelor in AI & Data Science</h4>
+                <h4>Bachelor in AI &amp; Data Science</h4>
                 <h5>2024 - Present</h5>
                 <p>University of Northampton, Northampton, UK</p>
                 <p>
-                  I am studying a program focused on AI, machine learning, and data science. In the first year, I’m learning computer science basics and AI concepts. In the second year, I’ll focus more on AI and work on a team project. In the final year, I’ll learn advanced AI skills and complete a dissertation. 
+                  I am studying a program focused on AI, machine learning, and
+                  data science. In the first year, I’m learning computer science
+                  basics and AI concepts. In the second year, I’ll focus more on
+                  AI and work on a team project. In the final year, I’ll learn
+                  advanced AI skills and complete a dissertation.
                 </p>
               </div>
               <div class="summary-item">
@@ -144,84 +170,50 @@
                 <h5>2021 - 2023</h5>
                 <p>United Academy, Lalitpur, Nepal</p>
                 <p>
-                  basics of programming, computer systems, and algorithms. languages like Python or Java, and explore concepts like data structures, databases, and web development. Additionally, understanding of operating systems, computer networks, and cybersecurity.
+                  basics of programming, computer systems, and algorithms.
+                  languages like Python or Java, and explore concepts like data
+                  structures, databases, and web development. Additionally,
+                  understanding of operating systems, computer networks, and
+                  cybersecurity.
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="contact-me" id="contact-me">
-          <h2>Contact</h2>
-          <p class="subtitle-block">
-          You can reach me through below details
-          </p>
-
-          <div class="contact-inner">
-            <div class="column-4">
-              <i class="fa-solid fa-location-dot"></i>
-              <div class="info-item">
-                <h3>Address</h3>
-                <p>36 Abington Square, Northampton</p>
-              </div>
-            </div>
-
-            <div class="column-4">
-              <i class="fa-solid fa-phone"></i>
-              <div class="info-item">
-                <h3>Reach me at</h3>
-                <p>+44 7405 551141</p>
-              </div>
-            </div>
-
-            <div class="column-4">
-              <i class="fa-solid fa-envelope"></i>
-              <div class="info-item">
-                <h3>Email Me</h3>
-                <p>Anjitbohara111@gmail.com</p>
-              </div>
-            </div>
-
-          </div>
-          <form>
-            <div class="row">
-              <div class="width-50">
-                <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-              </div>
-              <div class="width-50">
-                <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-              </div>
-              <div class="width-100">
-                <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-              </div>
-              <div class="width-100">
-                <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-              </div>
-            </div>
-            <button type="submit">Send Message</button>
-
-        </form>
-        </div>
       </div>
-    </main>
+    </section>
     <footer>
       <div class="container">
         <div class="copywright">
-          <p style="line-height: 25px;">
-            © <span>Copyright</span> <strong class="sitename">Portfolio</strong>
+          <p style="line-height: 25px">
+            © <span>Copyright</span> <strong class="sitename">AB-Dev</strong>
             <span>All Rights Reserved</span>
           </p>
         </div>
         <div class="social_network">
-          <a href="https://www.linkedin.com/in/anjit-bohara-b9183032b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://www.facebook.com/anjit.bohara.18" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-          <a href="https://www.instagram.com/____anjit_bohara____?igsh=MW5hY25vbHY4eTYxZg==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a
+            href="https://www.linkedin.com/in/anjit-bohara-b9183032b/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://www.facebook.com/anjit.bohara.18" target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/____anjit_bohara____?igsh=MW5hY25vbHY4eTYxZg=="
+            target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
         </div>
         <div class="designed_by">
-          Designed by <a href="https://www.facebook.com/anjit.bohara.18" target="_blank" style="color: gold;"><strong>Anjit Bohara</strong></a>
+          Designed by
+          <a href="https://bootstrapmade.com/" style="color: gold"
+            ><strong>Anjit Bohara</strong></a
+          >
         </div>
       </div>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
